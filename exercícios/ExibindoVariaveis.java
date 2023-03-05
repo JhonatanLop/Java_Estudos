@@ -1,3 +1,4 @@
+package exercícios;
 public class ExibindoVariaveis {
 
     public static void main(String[] args) {
