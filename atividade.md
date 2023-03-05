@@ -62,6 +62,7 @@
         }
     }
     ```
+
     |valor de indice|verificação|print|incremento|
     |----------|----|-----|----------|
     |1|é divisível por 3 = false||1 + 1|
