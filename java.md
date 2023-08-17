@@ -236,3 +236,6 @@ o interpretador que estamos utilizando array.<br>
 O Array contem a primeira letra em minúsucula e deus itens devem ser delcarados dentro de chaves "{}" separados por vírgula<br>
 <br>
 Para "printar" a lista é necessário fazer um laço, pois só é possível printar um intem da lista por vez e mostrando o índice<br>
+
+## Tipos primitivos e Manipulação de dados
+

@@ -69,3 +69,43 @@
     |2|é divisível por 3 = false||2 + 1|
     |3|é divisível por 3 = true|3|3 + 1|
     |e assim por diante...|||
+
+4. Imprimindo fatorial
+
+    ```java
+    public class ImprimindoFatorial {
+        public static void main(String[] args) {
+            int i = 1;
+            while (i < 11) {
+                // printando o primeiro fatorial
+                if (i == 1) {
+                    System.out.println(i);
+                } 
+                else {
+                    // definindo o número atual
+                    int numeroAtual = i;
+                    int fatorial = 1;
+                    while (numeroAtual > 1) {
+                        // definindo o próximo número a ser multiplicado
+                        int proximoNumero = numeroAtual - 1;
+                        // o fatorial número atual * o próximo
+                        fatorial = fatorial * (numeroAtual * proximoNumero);
+                        // subtraindo o número atual por 2 para eliminar os que já foram multiplicados
+                        numeroAtual = numeroAtual - 2;
+                    }
+                    System.out.println(fatorial);
+                }
+                i++;
+            }
+        }
+    }
+    ```
+
+    |valor de indice|numero atual|próximo número|fatorial|numero atual|condição
+    |----------|----|-----|----------|-------|----|
+    |1|1||1 por conveção|||
+    |2|2|2-1=1|1 * (2 * 1) = 2|2 - 2 = 0|numero atual > 1 continue -> false|
+    |3|3|3-1=2|1 * (3 * 2) = 6|3 - 2 = 1|numero atual > 1 continue -> false|
+    |4|4|4-1=3|1 * (4 * 3) = 12|4 - 2 = 2|numero atual > 1 continue -> true|
+    |4|2|2-1=1|12 * (2 * 1) = 24|2 - 2 = 0|numero atual > 1 continue -> false|
+    |e assim por diante...|||
